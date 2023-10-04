@@ -7,19 +7,19 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/cloudy"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
-            android:name=".homeActivity"
+            android:name="com.myApplicationWeather.weatherapp.homeActivity"
             android:exported="true" >
 
         </activity>
         <activity
-            android:name=".splashActivity"
+            android:name="com.myApplicationWeather.weatherapp.splashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.myApplicationWeather.weatherapp.MainActivity"
             android:exported="true"
             >
 

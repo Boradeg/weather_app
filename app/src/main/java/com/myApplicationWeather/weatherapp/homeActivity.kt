@@ -1,10 +1,12 @@
-package com.example.weatherapp
+package com.myApplicationWeather.weatherapp
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SearchView
-import com.example.weatherapp.databinding.ActivityHomeBinding
+
+import com.myApplicationWeather.weatherapp.databinding.ActivityHomeBinding
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

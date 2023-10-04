@@ -5,13 +5,13 @@ plugins {
 
 android {
 
-    namespace = "com.example.weatherapp"
+    namespace = "com.myApplicationWeather.weatherapp"
     compileSdk = 33
     buildFeatures{
         viewBinding = true
     }
     defaultConfig {
-        applicationId = "com.example.weatherapp"
+        applicationId = "com.myApplicationWeather.weatherapp"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

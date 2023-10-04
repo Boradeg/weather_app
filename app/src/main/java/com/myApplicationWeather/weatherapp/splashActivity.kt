@@ -1,4 +1,4 @@
-package com.example.weatherapp
+package com.myApplicationWeather.weatherapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,7 +16,7 @@ class splashActivity : AppCompatActivity() {
         actionBar?.hide()
         supportActionBar?.hide()
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent= Intent(this,homeActivity::class.java)
+            val intent= Intent(this, homeActivity::class.java)
             startActivity(intent)
             finish()
         },3000)
