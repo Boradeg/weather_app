@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Weather App</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="sunny">Sunny</string>
+    <string name="_00_00">00:00</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="_0000_hpa">0000 hPa</string>
+    <string name="sea">Sea</string>
+    <string name="_00_000">00:00</string>
+    <string name="condition">condition</string>
+    <string name="_00_m_s">00 m/s</string>
+    <string name="humidity">Humidity</string>
+    <string name="_13_august_2023">13 August 2023</string>
+    <string name="sunday">Sunday</string>
+    <string name="min_temp">Min Temp</string>
+    <string name="max_temp">Max Temp</string>
+    <string name="_00_00_c">00.00 °C</string>
+    <string name="today">Today</string>
 </resources>

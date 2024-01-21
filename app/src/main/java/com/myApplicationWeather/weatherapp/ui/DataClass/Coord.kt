@@ -1,4 +1,4 @@
-package com.myApplicationWeather.weatherapp
+package com.myApplicationWeather.weatherapp.ui.DataClass
 
 data class Coord(
     val lat: Double,

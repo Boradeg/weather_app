@@ -3,9 +3,10 @@ package com.myApplicationWeather.weatherapp
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.SearchView
+import androidx.appcompat.widget.SearchView
 
 import com.myApplicationWeather.weatherapp.databinding.ActivityHomeBinding
+import com.myApplicationWeather.weatherapp.ui.DataClass.weatherApp
 
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,7 +31,7 @@ class homeActivity : AppCompatActivity() {
     }
     private fun sarchCity() {
         val searchView=binding.searchView
-        searchView.setOnQueryTextListener(object:SearchView.OnQueryTextListener{
+        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
                 if (query != null) {
                     fetchWeatherData(query)
@@ -38,10 +39,12 @@ class homeActivity : AppCompatActivity() {
                 return true
             }
             override fun onQueryTextChange(newText: String?): Boolean {
-                return true;
+                //updateQueryTextColor(newText)
+                return true
             }
         })
     }
+
     private fun fetchWeatherData(city:String) {
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
@@ -78,8 +81,6 @@ class homeActivity : AppCompatActivity() {
                     binding.date.text=setDate()
                     binding.day.text=setDay(System.currentTimeMillis())
                     changeImageCondition(condition)
-//                Log.d("TAG","onResponse:$temprature")
-//                Toast.makeText(this@homeActivity, "$temprature", Toast.LENGTH_SHORT).show()
                 }
             }
             override fun onFailure(call: Call<weatherApp>, t: Throwable) {
