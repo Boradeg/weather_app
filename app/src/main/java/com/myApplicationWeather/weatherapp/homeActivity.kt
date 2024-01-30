@@ -21,7 +21,7 @@ class homeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-         binding=ActivityHomeBinding.inflate(layoutInflater)
+        binding=ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBar?.hide()
         supportActionBar?.hide()
@@ -56,7 +56,7 @@ class homeActivity : AppCompatActivity() {
         response.enqueue(object :Callback<weatherApp>{
             @SuppressLint("SetTextI18n")
             override fun onResponse(call: Call<weatherApp>, response: Response<weatherApp>) {
-                    val responseBody=response.body()
+                val responseBody=response.body()
                 if(response.isSuccessful && responseBody!=null)
                 {
                     val temprature= responseBody!!.main.temp
@@ -123,7 +123,7 @@ class homeActivity : AppCompatActivity() {
     }
 
     private fun setDay(currentTimeMillis: Long):String {
-   val simpleDateFormat=SimpleDateFormat("EEEE", Locale.getDefault())
+        val simpleDateFormat=SimpleDateFormat("EEEE", Locale.getDefault())
         return simpleDateFormat.format((Date()))
     }
 }
