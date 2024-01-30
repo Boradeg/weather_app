@@ -3,7 +3,7 @@ package com.myApplicationWeather.weatherapp
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.widget.SearchView
+import android.widget.SearchView
 
 import com.myApplicationWeather.weatherapp.databinding.ActivityHomeBinding
 import com.myApplicationWeather.weatherapp.ui.DataClass.weatherApp
@@ -25,8 +25,10 @@ class homeActivity : AppCompatActivity() {
         setContentView(binding.root)
         actionBar?.hide()
         supportActionBar?.hide()
-        //apiid d42c3df589250d80aa99ff00fdb16a3f
-        fetchWeatherData("jaipur")
+
+        //add live location code here
+
+        fetchWeatherData("pune")
         sarchCity()
     }
     private fun sarchCity() {
