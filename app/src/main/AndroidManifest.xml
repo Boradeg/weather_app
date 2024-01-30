@@ -14,11 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
-        <activity
-            android:name=".DummyActivity"
-            android:exported="true" >
 
-        </activity>
         <activity
             android:name=".homeActivity"
             android:exported="true">
@@ -33,9 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
+
     </application>
 
 </manifest>
